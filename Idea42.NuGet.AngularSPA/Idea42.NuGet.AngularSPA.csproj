@@ -50,7 +50,8 @@
     <None Include="content\App_Start\AngularSPAConfig.cs.pp" />
     <None Include="content\Controllers\AppSettingsController.cs.pp" />
     <None Include="content\Controllers\AngularSPAController.cs.pp" />
-    <None Include="content\App_Start\RouteConfig.cs.pp" />
+    <None Include="content\App_Start\AngularSPARouteConfig.cs.pp" />
+    <None Include="content\App_Start\AngularSPAWebApiConfig.cs.pp" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

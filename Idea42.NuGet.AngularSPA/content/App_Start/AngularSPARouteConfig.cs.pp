@@ -7,7 +7,7 @@ using System.Web.Routing;
 
 namespace $rootnamespace$
 {
-    public class RouteConfig
+    public class AngularSPARouteConfig
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
