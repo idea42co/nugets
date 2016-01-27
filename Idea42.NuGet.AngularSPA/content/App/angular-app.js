@@ -65,7 +65,6 @@ app.service('dal', [
         }
 
         return {
-            authAjaxRequest: authAjaxRequest,
             ajaxRequest: ajaxRequest,
             multiPartDataRequest: multiPartDataRequest,
             formFileUploadDataRequest: formFileUploadDataRequest
