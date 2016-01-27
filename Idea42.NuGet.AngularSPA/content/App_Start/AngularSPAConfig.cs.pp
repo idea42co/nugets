@@ -6,6 +6,8 @@ using System.Web.Routing;
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(
     typeof($rootnamespace$.AngularSPAConfig), "PreStart")]
+[assembly: WebActivatorEx.PostApplicationStartMethod(
+    typeof($rootnamespace$.AngularSPAConfig), "PostStart")]
 
 namespace $rootnamespace$
 {
@@ -13,10 +15,13 @@ namespace $rootnamespace$
     {
         public static void PreStart()
         {
-			// Since Angular and MVC will conflict, we need to set up some routes to ignore MVC.
+            AngularSPABundleConfig.RegisterBundles(BundleTable.Bundles);
+        }
+
+        public static void PostStart()
+        {
             RouteTable.Routes.Clear();
             AngularSPARouteConfig.RegisterRoutes(RouteTable.Routes);
-            AngularSPABundleConfig.RegisterBundles(BundleTable.Bundles);
             GlobalConfiguration.Configure(AngularSPAWebApiConfig.Register);
         }
     }
