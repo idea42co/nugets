@@ -4,7 +4,7 @@
     <id>Idea42.NuGet.UoW</id>
     <version>0.0.3</version>
     <title>Idea42 UoW Pattern</title>
-    <authors>Idea42, LLC</authors>
+    <authors>Idea42 LLC</authors>
     <owners></owners>
     <description>
       At Idea42, we believe in best practices. That's why we created this Unit of Work (UoW) pattern nuget package to allow ANYONE to rapidly implement this industry standard pattern. 
