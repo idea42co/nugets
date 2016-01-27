@@ -46,7 +46,10 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <None Include="content\App.config.xdt">
+    <None Include="content\App.config.uninstall.xdt">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="content\App.config.install.xdt">
       <SubType>Designer</SubType>
     </None>
     <None Include="content\DataContext.cs.pp" />
