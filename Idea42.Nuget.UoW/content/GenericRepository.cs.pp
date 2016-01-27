@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Linq.Expressions;
-using $rootnamespace$.Interfaces
+using $rootnamespace$.Interfaces;
 
 namespace $rootnamespace$
 {

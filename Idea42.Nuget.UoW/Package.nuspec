@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Idea42.NuGet.UoW</id>
-    <version>0.0.1</version>
+    <version>0.0.3</version>
     <title>Idea42 UoW Pattern</title>
     <authors>Idea42, LLC</authors>
     <owners></owners>

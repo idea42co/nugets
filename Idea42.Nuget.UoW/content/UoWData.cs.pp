@@ -1,6 +1,6 @@
 ﻿using System;
 using $rootnamespace$.Samples;
-using $rootnamespace$.Interfaces
+using $rootnamespace$.Interfaces;
 
 namespace $rootnamespace$
 {
@@ -9,7 +9,7 @@ namespace $rootnamespace$
         private DataContext _dbContext;
 
         // Implement your interface like so.
-        public IGenericRepository<SampleModels> Samples { get { return new GenericRepository<SampleModel>(_dbContext); } }
+        public IGenericRepository<SampleModel> Samples { get { return new GenericRepository<SampleModel>(_dbContext); } }
 
         public DataUoW()
         {
@@ -35,7 +35,7 @@ namespace $rootnamespace$
 
         protected void CreateDbContext()
         {
-            _dbContext = new DPDBContext();
+            _dbContext = new DataContext();
 
             // Do NOT enable proxied entities, else serialization fails
             _dbContext.Configuration.ProxyCreationEnabled = false;
