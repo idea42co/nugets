@@ -2,27 +2,27 @@
 <package >
   <metadata>
     <id>Idea42.NuGet.UoW</id>
-    <version>1.0.0</version>
-    <title>Idea42.NuGet.UoW</title>
-    <authors>rkw6086</authors>
+    <version>0.0.1</version>
+    <title>Idea42 UoW Pattern</title>
+    <authors>Idea42, LLC</authors>
     <owners></owners>
     <description>
-      A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.
+      At Idea42, we believe in best practices. That's why we created this Unit of Work (UoW) pattern nuget package to allow ANYONE to rapidly implement this industry standard pattern. 
     </description>
     <releaseNotes>
     </releaseNotes>
     <summary>
-      A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.
+      A UoW pattern, implemented as a Nuget package.
     </summary>
     <language>en-US</language>
     <projectUrl>https://nuget.org/packages/Idea42.NuGet.UoW</projectUrl>
     <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
-    <copyright>Copyright  2016</copyright>
+    <copyright>Copyright 2016 - Idea42, LLC</copyright>
     <dependencies>
         <group targetFramework="net40">
-          <dependency id="log4net" version="1.2.10" />
+          <dependency id="EntityFramework" version="6.1.3" />
         </group>
     </dependencies>
     <references></references>

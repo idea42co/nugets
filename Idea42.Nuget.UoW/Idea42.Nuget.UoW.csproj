@@ -46,7 +46,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <None Include="content\App.config.xdt" />
+    <None Include="content\App.config.xdt">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="content\DataContext.cs.pp" />
     <None Include="content\Interfaces\IGenericRepository.cs.pp" />
     <None Include="content\Samples\SampleModel.cs.pp" />
