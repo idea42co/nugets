@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="content\Views\AngularSPA\Index.cshtml" />
+    <None Include="content\Views\web.config.install.xdt" />
     <None Include="NuGetPackage.ps1" />
     <None Include="NuGetSetup.ps1" />
     <None Include="NuGet.exe" />
