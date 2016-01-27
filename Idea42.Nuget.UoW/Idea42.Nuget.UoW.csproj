@@ -46,6 +46,12 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <None Include="content\DataContext.cs.pp" />
+    <None Include="content\Interfaces\IGenericRepository.cs.pp" />
+    <None Include="content\Samples\SampleModel.cs.pp" />
+    <None Include="content\Interfaces\IDataUoW.cs.pp" />
+    <None Include="content\UoWData.cs.pp" />
+    <None Include="content\GenericRepository.cs.pp" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -59,9 +65,11 @@
     <None Include="tools\uninstall.ps1" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="content\" />
     <Folder Include="lib\" />
     <Folder Include="src\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
