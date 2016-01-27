@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Idea42.NuGet.AngularSPA</id>
+    <version>0.0.1</version>
+    <title>Idea42.NuGet.AngularSPA</title>
+    <authors>rkw6086</authors>
+    <owners></owners>
+    <description>
+      We love Angular... We also love SPA's (Single Page Apps)! So, at Idea42, we created this starter kit that gets you going with the best known practices for creating an Angular SPA!  
+    </description>
+    <releaseNotes>
+    </releaseNotes>
+    <summary>
+      A Angular SPA (Single Page App) starter kit using the latest version 4.5.2 of ASP.NET MVC
+    </summary>
+    <language>en-US</language>
+    <projectUrl>https://nuget.org/packages/Idea42.NuGet.AngularSPA</projectUrl>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <copyright>Copyright  2016</copyright>
+    <dependencies>
+        <group targetFramework="net40">
+          <dependency id="AngularJS.Core" version="1.4.8" />
+          <dependency id="AngularJS.Route" version="1.4.8" />
+          <dependency id="bootstrap" version="3.3.6" />
+          <dependency id="Microsoft.AspNet.WebApi" version="5.2.2" />
+          <dependency id="jQuery" version="1.10.2" />
+          <dependency id="Modernizr" version="2.6.2" />
+        </group>
+    </dependencies>
+    <references></references>
+    <tags></tags>
+  </metadata>
+  <files>
+    <file src="lib\" target="lib" />
+    <file src="tools\" target="tools" />
+    <file src="content\" target="content" />
+  </files>
+</package>
