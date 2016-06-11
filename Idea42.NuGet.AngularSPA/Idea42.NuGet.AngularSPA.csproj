@@ -45,6 +45,9 @@
   <PropertyGroup>
     <StartupObject />
   </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
   <ItemGroup>
     <None Include="content\App_Start\AngularSPABundleConfig.cs.pp" />
     <None Include="content\App_Start\AngularSPAConfig.cs.pp" />
@@ -102,4 +105,8 @@
     <Message Text="SUCCESS: Created package." Condition=" '$(Configuration)|$(Platform)|$(ExitCode)' == 'Debug|AnyCPU|0' " Importance="High" />
     <Message Text="SUCCESS: Published package." Condition=" '$(Configuration)|$(Platform)|$(ExitCode)' == 'Release|AnyCPU|0' " Importance="High" />
   </Target>
+  <PropertyGroup>
+    <PostBuildEvent>IF NOT EXIST C:\Nugets MKDIR C:\Nugets
+IF EXIST "$(ProjectDir)*.nupkg" copy "$(ProjectDir)*.nupkg" C:\Nugets</PostBuildEvent>
+  </PropertyGroup>
 </Project>
