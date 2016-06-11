@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F6A069B1-19F2-43C3-85EC-866E3AE60071}</ProjectGuid>
+    <ProjectGuid>{B5E3F3A3-73D9-4B85-875C-9A08EBE73722}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Idea42.NuGet.AngularSPA</RootNamespace>
-    <AssemblyName>Idea42.NuGet.AngularSPA</AssemblyName>
+    <RootNamespace>Idea42.NuGet.AngularSPA.Lumx</RootNamespace>
+    <AssemblyName>Idea42.NuGet.AngularSPA.Lumx</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -49,15 +49,15 @@
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="content\App_Start\AngularSPABundleConfig.cs.pp" />
-    <None Include="content\App_Start\AngularSPAConfig.cs.pp" />
-    <None Include="content\Controllers\AppSettingsController.cs.pp" />
-    <None Include="content\Controllers\AngularSPAController.cs.pp" />
-    <None Include="content\App_Start\AngularSPARouteConfig.cs.pp" />
-    <None Include="content\App_Start\AngularSPAWebApiConfig.cs.pp" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="content\App_Start\AngularSPABundleConfig.cs.pp" />
+    <None Include="content\App_Start\AngularSPAConfig.cs.pp" />
+    <None Include="content\App_Start\AngularSPARouteConfig.cs.pp" />
+    <None Include="content\App_Start\AngularSPAWebApiConfig.cs.pp" />
+    <None Include="content\Controllers\AngularSPAController.cs.pp" />
+    <None Include="content\Controllers\AppSettingsController.cs.pp" />
     <None Include="content\Views\AngularSPA\Index.cshtml" />
     <None Include="content\Views\Web.config" />
     <None Include="NuGetPackage.ps1" />
@@ -74,15 +74,17 @@
     <Folder Include="src\" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="System" />
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="content\App\angular-app-run.js" />
     <Content Include="content\App\angular-app.js" />
+    <Content Include="content\App\Controllers\Directives\exampleDirectiveController.js" />
     <Content Include="content\App\Controllers\homeController.js" />
     <Content Include="content\App\Controllers\shellController.js" />
     <Content Include="content\App\dal.js" />
+    <Content Include="content\App\Directives\exampleDirective.js" />
+    <Content Include="content\App\Models\additionModel.js" />
     <Content Include="content\App\Services\appSettingsService.js" />
     <Content Include="content\App\Services\exampleDataService.js" />
+    <Content Include="content\App\Views\Directives\example.html" />
     <Content Include="content\App\Views\home.html" />
     <Content Include="content\App\Views\shell.html" />
     <Content Include="content\Content\Styles\README.txt" />
@@ -109,6 +111,7 @@
   </Target>
   <PropertyGroup>
     <PostBuildEvent>IF NOT EXIST C:\Nugets MKDIR C:\Nugets
-IF EXIST "$(ProjectDir)*.nupkg" copy "$(ProjectDir)*.nupkg" C:\Nugets</PostBuildEvent>
+IF EXIST "$(ProjectDir)*.nupkg" copy "$(ProjectDir)*.nupkg" C:\Nugets
+</PostBuildEvent>
   </PropertyGroup>
 </Project>

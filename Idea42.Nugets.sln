@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Idea42.NuGet.UoW", "Idea42.NuGet.UoW\Idea42.NuGet.UoW.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Idea42.NuGet.AngularSPA", "Idea42.NuGet.AngularSPA\Idea42.NuGet.AngularSPA.csproj", "{F6A069B1-19F2-43C3-85EC-866E3AE60071}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Idea42.NuGet.AngularSPA.Lumx", "Idea42.NuGet.AngularSPA.Lumx\Idea42.NuGet.AngularSPA.Lumx.csproj", "{B5E3F3A3-73D9-4B85-875C-9A08EBE73722}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F6A069B1-19F2-43C3-85EC-866E3AE60071}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6A069B1-19F2-43C3-85EC-866E3AE60071}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6A069B1-19F2-43C3-85EC-866E3AE60071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5E3F3A3-73D9-4B85-875C-9A08EBE73722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5E3F3A3-73D9-4B85-875C-9A08EBE73722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5E3F3A3-73D9-4B85-875C-9A08EBE73722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5E3F3A3-73D9-4B85-875C-9A08EBE73722}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

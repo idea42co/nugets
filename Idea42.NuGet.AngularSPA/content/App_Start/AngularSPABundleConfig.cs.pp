@@ -10,17 +10,16 @@ namespace $rootnamespace$
         bundles.IgnoreList.Clear();
 
         bundles.Add(new ScriptBundle("~/bundles/angular/spa/core").Include(
-                "~/Scripts/jquery-{version}.js",
-                "~/Scripts/modernizr-*",
-                "~/Scripts/angular.js",
-                "~/Scripts/angular-route.js",
-                "~/App/angular-app.js").IncludeDirectory(
-                "~/App/Controllers/", "*.js", true).IncludeDirectory(
-                "~/App/Services/", "*.js", true));
+                    "~/App/angular-app.js",
+                    "~/App/dal.js")
+                    .IncludeDirectory("~/App/Services/", "*.js", true)
+                    .IncludeDirectory("~/App/Models/", "*.js", true)
+                    .IncludeDirectory("~/App/Directives/", "*.js", true)
+                    .IncludeDirectory("~/App/Controllers/", "*.js", true));
 
-        bundles.Add(
-          new StyleBundle("~/Content/css")
-            .Include("~/Content/bootstrap.css")
+            bundles.Add(
+              new StyleBundle("~/Content/css")
+                .IncludeDirectory("~/Content/Styles/", "*.css"));
           );
     }
 }
