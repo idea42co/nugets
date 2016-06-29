@@ -23,7 +23,7 @@
       A Angular SPA (Single Page App) starter kit using the latest version (5.2.3) of ASP.NET MVC
     </summary>
     <language>en-US</language>
-    <projectUrl>https://nuget.org/packages/Idea42.NuGet.AngularSPA</projectUrl>
+    <projectUrl>https://github.com/idea42co/nugets/</projectUrl>
     <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
