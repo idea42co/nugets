@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Idea42.NuGet.AngularSPA</id>
-    <version>1.1.1</version>
+    <version>1.2.0</version>
     <title>Idea42.NuGet.AngularSPA</title>
     <authors>rkw6086</authors>
     <owners></owners>
@@ -12,6 +12,7 @@
       To begin, start by creating an empty ASP.NET web project, add this package to the project, and we will take care of the rest. 
     </description>
     <releaseNotes>
+      This update includes a cleanup of the template code to follow the guides set up by the famous John Papa. https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
     </releaseNotes>
     <summary>
       A Angular SPA (Single Page App) starter kit using the latest version (5.2.3) of ASP.NET MVC
