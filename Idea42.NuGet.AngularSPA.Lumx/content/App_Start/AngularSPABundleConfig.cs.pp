@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Web.Optimization;
 
-namespace AngularLumxTest
+namespace $rootnamespace$
 {
     public class AngularSPABundleConfig
     {
