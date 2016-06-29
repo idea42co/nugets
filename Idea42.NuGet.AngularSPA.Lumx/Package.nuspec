@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Idea42.NuGet.AngularSPA.Lumx</id>
-    <version>0.0.9</version>
+    <version>1.0.0</version>
     <title>Angular SPA with Lumx Starter Pack built by Idea42, LLC</title>
     <authors>ryan-idea42</authors>
     <owners>ryan-idea42</owners>

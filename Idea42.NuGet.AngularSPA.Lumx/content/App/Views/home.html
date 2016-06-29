@@ -1,9 +1,45 @@
 ﻿<div>
     <h1>Hello, world!</h1>
-    <p>{{ description }}</p>
+    <p>{{ vm.description }}</p>
 
     <br />
     <h2>Using Directives</h2>
     <p>Directives are awesome for creating reusable code, here are some examples to get you going.</p>
     <example model-value="'This message, passed as a variable'"></example>
+    <br />
+    <h2>Using Dialogs</h2>
+    <p>Dialog can be useful, so learning how a framework handles it is important as well. Lumx handles it differently than most. Review the source code to see how it's working. To demonstrate a dialog, click the button below.</p>
+    <lx-button class="raised" ng-click="vm.openModal()">Open Dialog</lx-button>
+    <br />
+    <br />
+    <h2>Keep your code clean!</h2>
+    <p>It's important to follow a good guideline for keeping code clean. Please refer to <a href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md">John Papa's guide for clean angular code.</a></p>
+    <br />
+    <h2>Need more info on Lumx?</h2>
+    <p>Visit thier website here, <a href="http://ui.lumapps.com/">http://ui.lumapps.com/</a></p>
 </div>
+
+<lx-dialog id="testDialog">
+    <lx-dialog-header>
+        <div class="toolbar bgc-primary pl++">
+            <span class="toolbar__label tc-white fs-title">
+                Test Dialog
+            </span>
+
+            <div class="toolbar__right">
+                <lx-button lx-size="l" lx-color="white" lx-type="icon" lx-dialog-close>
+                    <i class="mdi mdi-close"></i>
+                </lx-button>
+            </div>
+        </div>
+    </lx-dialog-header>
+    <lx-dialog-content>
+        <div class="p++">
+            <p>You just opened a dialog!</p>
+            <p>It's really just that easy!</p>
+        </div>
+    </lx-dialog-content>
+    <lx-dialog-footer>
+        <lx-button lx-type="flat" lx-dialog-close>Ok</lx-button>
+    </lx-dialog-footer>
+</lx-dialog>

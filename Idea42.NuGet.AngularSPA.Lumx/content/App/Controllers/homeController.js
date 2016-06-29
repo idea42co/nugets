@@ -8,7 +8,7 @@
     ////////////
 
     function _openModal() {
-
+        LxDialogService.open('testDialog');
     }
 }
 
