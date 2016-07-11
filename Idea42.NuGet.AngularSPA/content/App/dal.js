@@ -1,4 +1,7 @@
-﻿function DataAccessLayerService($http, $rootScope) {
+﻿DataAccessLayerService.$inject = ['$http', '$rootScope'];
+angular.module('angularSPA').service('dal', DataAccessLayerService);
+
+function DataAccessLayerService($http, $rootScope) {
     $rootScope.rootApiUrl = "/api/";
 
     function ajaxRequest(url, requestType, data) {
@@ -48,8 +51,3 @@
         formFileUploadDataRequest: formFileUploadDataRequest
     };
 }
-
-// Inject Dependencies
-DataAccessLayerService.$inject = ['$http', '$rootScope'];
-
-angular.module('angularSPA').service('dal', DataAccessLayerService);

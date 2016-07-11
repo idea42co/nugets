@@ -1,4 +1,7 @@
-﻿function AppSettingsModule(dal, $q) {
+﻿AppSettingsModule.$inject = ['dal', '$q'];
+angular.module('angularSPA').service('appSettings', AppSettingsModule);
+
+function AppSettingsModule(dal, $q) {
     var hasCalledForSettings = false;
     var settings = [];
 
@@ -24,8 +27,3 @@
         getSetting: getSetting
     }
 }
-
-// Inject Dependencies
-AppSettingsModule.$inject = ['dal', '$q'];
-
-angular.module('angularSPA').service('appSettings', AppSettingsModule);

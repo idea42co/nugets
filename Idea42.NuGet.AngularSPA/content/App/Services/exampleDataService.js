@@ -1,7 +1,7 @@
-﻿app.service('exampleDataService', ['dal', function (dal) {
-    'use strict';
+﻿ExampleDataService.$inject = ['dal'];
+angular.module('angularSPA').service('exampleDataService', ExampleDataService);
 
-
+function ExampleDataService(dal) {
     var _addTwoNumbers = function (data) {
         return dal.ajaxRequest('values/add', 'POST', data);
 
@@ -21,4 +21,4 @@
 
     // The 'dal' object already has the service URL in it, so you don't have to worry about it.
 
-}]);
+}
