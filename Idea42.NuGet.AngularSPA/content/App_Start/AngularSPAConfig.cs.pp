@@ -21,8 +21,8 @@ namespace $rootnamespace$
         public static void PostStart()
         {
             RouteTable.Routes.Clear();
+			GlobalConfiguration.Configure(AngularSPAWebApiConfig.Register);
             AngularSPARouteConfig.RegisterRoutes(RouteTable.Routes);
-            GlobalConfiguration.Configure(AngularSPAWebApiConfig.Register);
         }
     }
 }

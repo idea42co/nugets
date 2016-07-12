@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Idea42.NuGet.AngularSPA</id>
-    <version>1.3.0</version>
+    <version>1.3.1</version>
     <title>Idea42.NuGet.AngularSPA</title>
     <authors>ryan-idea42</authors>
     <owners>ryan-idea42</owners>
@@ -12,7 +12,8 @@
       To begin, start by creating an empty ASP.NET web project, add this package to the project, and we will take care of the rest.
     </description>
     <releaseNotes>
-      In addition to updating our code template to match John Papa's guide better, we also updated to the latest version of Angular. 
+      1.3.0 - In addition to updating our code template to match John Papa's guide better, we also updated to the latest version of Angular.
+      1.3.1 - Fixed issue with WebAPI Configuration Registration where the MVC mappings prevented the API from being called.
     </releaseNotes>
     <summary>
       An Angular SPA (Single Page App) starter kit using the latest version (5.2.3) of ASP.NET MVC

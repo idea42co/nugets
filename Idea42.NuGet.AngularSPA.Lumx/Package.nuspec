@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Idea42.NuGet.AngularSPA.Lumx</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>Angular SPA with Lumx Starter Pack built by Idea42, LLC</title>
     <authors>ryan-idea42</authors>
     <owners>ryan-idea42</owners>
@@ -18,6 +18,7 @@
     <releaseNotes>
       1.0.0 - Initial Release
       1.0.1 - Fixed namespace issue would prevent project from running after you installed the package.
+      1.0.2 - Fixed issue with WebAPI Configuration Registration where the MVC mappings prevented the API from being called.
     </releaseNotes>
     <summary>
       A Angular SPA (Single Page App) starter kit using the latest version (5.2.3) of ASP.NET MVC
